@@ -18,6 +18,8 @@ mermaid = true
 
 今天我们从架构设计到源码实现，把它的每一个核心模块讲透。
 
+项目开源地址：https://github.com/pony-maggie/code_minions
+
 ---
 
 ## 一、整体架构：五层分层

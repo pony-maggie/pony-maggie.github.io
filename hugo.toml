@@ -1,4 +1,4 @@
-baseURL = 'https://pony-maggie.github.io/'
+baseURL = 'https://blog.lucasma.cc/'
 languageCode = 'zh-cn'
 title = 'Lucas Ma 的博客'
 theme = 'PaperMod'
