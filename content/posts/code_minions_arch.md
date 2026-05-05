@@ -2,6 +2,7 @@
 date = '2026-05-05T16:38:19+08:00'
 draft = false
 title = 'code-minions：一个用 YAML 编排 AI 研发流程的工作流引擎'
+mermaid = true
 +++
 
 
