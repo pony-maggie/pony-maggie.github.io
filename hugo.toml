@@ -1,7 +1,78 @@
 baseURL = 'https://pony-maggie.github.io/'
 languageCode = 'zh-cn'
-title = 'LucasMa 的博客'
-theme = 'ananke'
+title = 'Lucas Ma 的博客'
+theme = 'PaperMod'
+copyright = '© 2026 Lucas Ma'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = 'production'
+  title = 'Lucas Ma 的博客'
+  description = '技术笔记、项目经验和日常思考'
+  keywords = ['Blog', 'Hugo', 'GitHub Pages', '技术博客']
+  author = 'LucasMa'
+
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+
+  DateFormat = '2006-01-02'
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+
+  hideSummary = true
+  mainSections = ['posts']
+
+  mermaid = true
+
+[params.homeInfoParams]
+  Title = '欢迎来到我的博客'
+  Content = '这里记录技术笔记、项目经验和日常思考。'
+
+[[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/pony-maggie'
+
+[[menu.main]]
+  identifier = 'posts'
+  name = '文章'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'archives'
+  name = '归档'
+  url = '/archives/'
+  weight = 20
+
+[[menu.main]]
+  identifier = 'tags'
+  name = '标签'
+  url = '/tags/'
+  weight = 30
+
+[[menu.main]]
+  identifier = 'search'
+  name = '搜索'
+  url = '/search/'
+  weight = 40
 
 [caches]
   [caches.images]
