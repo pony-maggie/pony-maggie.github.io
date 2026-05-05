@@ -1,0 +1,8 @@
+baseURL = 'https://pony-maggie.github.io/'
+languageCode = 'zh-cn'
+title = 'LucasMa 的博客'
+theme = 'ananke'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
