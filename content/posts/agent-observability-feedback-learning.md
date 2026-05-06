@@ -1,12 +1,12 @@
----
-title: "Agent 观测的秘密：为什么只有 Trace 你永远学不会"
++++
+title = "Agent 观测的秘密：为什么只有 Trace 你永远学不会"
 date = 2026-05-06T22:00:00+08:00
 draft = false
 description = "大多数团队把 Agent 观测当成调试工具——出了问题再看 Trace。但这只是冰山一角。真正的深度是：观测必须驱动学习。本文拆解模型层、Harness 层、上下文层三层学习闭环，手把手教你用 Trace + Feedback 构建真正的 Agent 迭代飞轮。"
 tags = ["AI Agent", "Observability", "LangChain", "LLM", "评测"]
 categories = ["AI", "工程实践"]
 toc = true
----
++++
 
 ## 开篇：Trace 打完了，然后呢？
 
