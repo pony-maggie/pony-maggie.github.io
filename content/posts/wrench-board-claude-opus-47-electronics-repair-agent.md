@@ -1,6 +1,6 @@
 +++
 title = "Wrench Board 架构解析：如何用 Claude Opus 4.7 构建板级电子修复智能体"
-date = 2026-05-08T22:00:00+08:00
+date = 2026-05-07T22:00:00+08:00
 draft = false
 type = "posts"
 +++

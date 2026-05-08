@@ -1,6 +1,6 @@
 +++
 title = "3天Hackathon打造AI陪练诊所：medkit技术架构全解析"
-date = 2026-05-08T22:00:00+08:00
+date = 2026-05-07T22:00:00+08:00
 draft = false
 type = "posts"
 +++
