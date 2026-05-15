@@ -1,16 +1,14 @@
 +++
-title = "用 Rust 写一个工业级 POSP 支付系统：我为什么以及怎么做的"
+title = "用 Rust 写一个工业级 POSP 支付系统"
 date = 2026-05-15T20:40:00+08:00
 draft = false
 +++
 
 ### 先说结论
 
-**这是一篇硬核实战长文，强烈建议先收藏。**
 
 如果你在做支付系统，或者想了解怎么用 Rust 写一个生产级别的金融基础设施，那这篇文章会对你很有价值。
 
-我完整读了这个项目的核心源码，它的架构设计解决了一个很现实的问题：**银联/ISO8583 协议栈在工业环境下的解析、路由、和业务处理**——这件事在很多公司的遗留系统里是用 Java/C++ 写的，维护成本高得离谱。
 
 ---
 
@@ -35,11 +33,10 @@ draft = false
 
 ## 二、架构全览
 
-```
-POS → posp-server → [posp-iso8583 + posp-msg] → posp-business → PostgreSQL
-                                                          ↓
-                                                    CUP / HSM / QR API
-```
+开源地址：https://github.com/pony-maggie/posp-rust
+
+里面有架构图
+
 
 从架构图来看，整条链路很清晰：
 
