@@ -15,6 +15,22 @@ categories = ["AI", "工程实践"]
 
 我读完这个仓库后的感觉是：它的重点不在“多炫”，而在“怎么把一套 computer use 系统做得可运行、可审查、可控”。这篇文章就按这个思路拆开讲。
 
+## 先看演示
+
+### 浏览器任务
+
+![浏览器任务演示](/images/posts/computer-use-for-deepseek/demo1.gif)
+
+这个 demo 展示的是最典型的 computer use 场景：启动 run、让模型打开网站、观察远程桌面、看事件和状态变化。
+
+### 文件工作区任务
+
+![文件工作区任务演示](/images/posts/computer-use-for-deepseek/demo2.gif)
+
+这个 demo 更能体现工程思路：文件上传、工作区内处理、结果下载，全程不需要把整个用户目录暴露给 AI。
+
+如果你只看一眼体验，这两个 GIF 基本就把项目价值讲完了。
+
 ## 目录
 
 - 一、先看结果：这套东西到底能干什么
@@ -22,9 +38,8 @@ categories = ["AI", "工程实践"]
 - 三、Agent 循环：每一步都在做什么
 - 四、安全层：允许、确认、阻断是怎么分的
 - 五、工作区隔离：文件为什么不会乱飞
-- 六、两个 GIF，先把体验说清楚
-- 七、这套实现的取舍
-- 八、总结
+- 六、这套实现的取舍
+- 七、总结
 
 ## 一、先看结果：这套东西到底能干什么
 
@@ -223,25 +238,7 @@ AI 能处理的是这个 run 的 workspace，而不是你整台机器。
 
 这也是我愿意把这个仓库称为“工程上靠谱”的原因之一：它知道什么该开放，什么必须关起来。
 
-## 六、两个 GIF，先把体验说清楚
-
-这个仓库里放了两个 demo，我也把它们一起带进博客了。Markdown 图片在 Hugo 里可以正常显示 GIF。
-
-### 浏览器任务
-
-![浏览器任务演示](/images/posts/computer-use-for-deepseek/demo1.gif)
-
-这个 demo 展示的是最典型的 computer use 场景：启动 run、让模型打开网站、观察远程桌面、看事件和状态变化。
-
-### 文件工作区任务
-
-![文件工作区任务演示](/images/posts/computer-use-for-deepseek/demo2.gif)
-
-这个 demo 更能体现工程思路：文件上传、工作区内处理、结果下载，全程不需要把整个用户目录暴露给 AI。
-
-如果你只看一眼体验，这两个 GIF 基本就把项目价值讲完了。
-
-## 七、这套实现的取舍
+## 六、这套实现的取舍
 
 我觉得这个仓库有几个很明确的取舍，值得记录下来。
 
@@ -282,7 +279,7 @@ AI 能处理的是这个 run 的 workspace，而不是你整台机器。
 
 对 computer use 这种任务型系统来说，这笔账值得算。
 
-## 八、总结
+## 七、总结
 
 如果把这仓库浓缩成一句话，我会说：
 
@@ -306,4 +303,3 @@ AI 能处理的是这个 run 的 workspace，而不是你整台机器。
 - [Computer Use for DeepSeek 仓库](https://github.com/pony-maggie/computer-use-for-deepseek)
 - [README 中文版](https://github.com/pony-maggie/computer-use-for-deepseek/blob/main/README.zh-CN.md)
 - [本地验收说明](https://github.com/pony-maggie/computer-use-for-deepseek/blob/main/docs/local-acceptance.md)
-
